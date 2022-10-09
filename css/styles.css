@@ -2,6 +2,8 @@
     --primary-text-color:  #757575;
     --title-text-color:#212121;
     --accent-color:#2196F3;
+    --bgrd-color:#fff;
+    --footer-bgrd: #2F303A;
 
 }
 h2, h3, h4, h5, h6{
@@ -9,15 +11,17 @@ h2, h3, h4, h5, h6{
 }
 
 body{
-    background-color: #fff;
+    background-color: var(--bgrd-color);
     color:var(--primary-text-color);
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    font-weight: 400;
+    
     
 }
 .logo{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -25,12 +29,11 @@ body{
     text-decoration: none;
 }
 .logo > .logo-black{
-    color:#212121;
+    color:var(--title-text-color);
 }
 .site-nav{
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -38,22 +41,17 @@ body{
     color: var(--accent-color);
 }
 .adress-header{
-    font-family: 'Roboto';
-    font-style: normal;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--primary-text-color);
 }
 /* Банер */
 .hero{
-    background-color: #2F303A;
-    color: #FFFFFF;
-    font-family: 'Roboto';
-    font-style: normal;
+    background-color: var(--footer-bgrd);
+    color: var(--bgrd-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 136%;
@@ -64,61 +62,47 @@ body{
 }
 /* Кнопка банера */
 .hero-button{
-    font-style: normal;
     font-weight: 700;
+    font-family: inherit;
     font-size: 16px;
     line-height: 188%;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--bgrd-color);
     background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    
 }
 
 li>h2 {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--title-text-color);
 }
-p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-}
+
 .title-style{
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 .list>h3{
-    font-family: 'Roboto';
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
-
     color:var(--title-text-color);
 }
-.list>p{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.list>.p{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    letter-spacing: 0.03em;
+    
+    
+}
+a>p{
     color:var(--primary-text-color);
 }
 
@@ -127,11 +111,11 @@ p{
 }
 /* Футер */
 .footer{
- background-color: #2F303A;
+ background-color: var(--footer-bgrd);
  
 }
 .logo-white{
-    color:#FFFFFF;
+    color:var(--bgrd-color);
 }
 /* Прибрані крапки у списках */
 .list{
@@ -140,20 +124,28 @@ p{
 
 .button, .hero-button{
     cursor:pointer;
+    font-family: inherit;
 }
 
+.button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
 
 .link{
     color:var(--title-text-color);
-    font-family: 'Roboto';
-    font-style: normal;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
+   
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link:hover,.link:focus, .adress-header:hover, .adress-header:focus{
+.link:hover,.link:focus, .adress-header:hover, .adress-header:focus, 
+.button:hover, .button:focus{
     color:var(--accent-color);
 }
 
@@ -161,22 +153,24 @@ p{
     color:var(--primary-text-color);
     text-decoration: none;
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
+    line-height: 171%;  
 }
 .adress:hover,.link:focus{
     color:var(--accent-color);
 }
-.list>.map{
+.map{
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    text-decoration: none;
     line-height: 171%;
-    letter-spacing: 0.03em;
+    color: var(--bgrd-color);
+}
+.hidden{
+    display: none;
+}
 
-color: #FFFFFF;
+.map{
+    color:var(--bgrd-color);
+}
+a{
+    text-decoration: none;
 }
