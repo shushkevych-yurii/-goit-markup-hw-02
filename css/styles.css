@@ -21,7 +21,7 @@ body{
     
 }
 .logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -54,7 +54,7 @@ body{
     color: var(--bgrd-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ body{
     font-weight: 700;
     font-family: inherit;
     font-size: 16px;
-    line-height: 188%;
+    line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--bgrd-color);
     background: var(--accent-color);
@@ -130,10 +130,15 @@ a>p{
 .button{
     font-weight: 500;
     font-size: 16px;
-    line-height: 162%;
+    line-height: 1.62;
     text-align: center;
 
     color: var(--title-text-color);
+}
+
+.secondary:hover, .secondary:focus{
+   color:var(--bgrd-color);
+   background-color: var(--accent-color);
 }
 
 .link{
@@ -144,8 +149,8 @@ a>p{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link:hover,.link:focus, .adress-header:hover, .adress-header:focus, 
-.button:hover, .button:focus{
+.link:hover,.link:focus, .adress-header:hover, .adress-header:focus 
+{
     color:var(--accent-color);
 }
 
@@ -153,7 +158,7 @@ a>p{
     color:var(--primary-text-color);
     text-decoration: none;
     font-style: normal;
-    line-height: 171%;  
+    line-height: 1.71;  
 }
 .adress:hover,.link:focus{
     color:var(--accent-color);
@@ -161,7 +166,7 @@ a>p{
 .map{
     font-style: normal;
     text-decoration: none;
-    line-height: 171%;
+    line-height: 1.71;
     color: var(--bgrd-color);
 }
 .hidden{
